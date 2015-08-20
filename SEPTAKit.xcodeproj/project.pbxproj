@@ -10,6 +10,20 @@
 		73DB4DC11B8514EF0035A444 /* SEPTAKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 73DB4DC01B8514EF0035A444 /* SEPTAKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		73DB4DC71B8514EF0035A444 /* SEPTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DB4DBB1B8514EF0035A444 /* SEPTAKit.framework */; };
 		73DB4DCE1B8514EF0035A444 /* SEPTAKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DCD1B8514EF0035A444 /* SEPTAKitTests.swift */; };
+		73DB4DE01B8515070035A444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DDF1B8515070035A444 /* AppDelegate.swift */; };
+		73DB4DE21B8515070035A444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DE11B8515070035A444 /* ViewController.swift */; };
+		73DB4DE51B8515070035A444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DB4DE31B8515070035A444 /* Main.storyboard */; };
+		73DB4DE71B8515070035A444 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DB4DE61B8515070035A444 /* Images.xcassets */; };
+		73DB4DEA1B8515070035A444 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DB4DE81B8515070035A444 /* LaunchScreen.xib */; };
+		73DB4DF61B8515070035A444 /* SEPTAKitExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DF51B8515070035A444 /* SEPTAKitExampleTests.swift */; };
+		73DB4DFE1B85151B0035A444 /* SEPTAKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DFD1B85151B0035A444 /* SEPTAKit.swift */; };
+		73DB4E001B85153C0035A444 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 73DB4DFF1B85153B0035A444 /* .gitignore */; };
+		73DB4E021B8515930035A444 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4E011B8515930035A444 /* README.md */; };
+		73DB4E041B85162E0035A444 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 73DB4E031B85162E0035A444 /* LICENSE */; };
+		73DB4E111B8519730035A444 /* SEPTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DB4DBB1B8514EF0035A444 /* SEPTAKit.framework */; };
+		73DB4E131B851A160035A444 /* SEPTAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73DB4DBB1B8514EF0035A444 /* SEPTAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73E65C2C1B8644A60033A345 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E65C2B1B8644A60033A345 /* Train.swift */; };
+		73E65C621B8678D00033A345 /* TrainViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E65C611B8678D00033A345 /* TrainViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +34,35 @@
 			remoteGlobalIDString = 73DB4DBA1B8514EF0035A444;
 			remoteInfo = SEPTAKit;
 		};
+		73DB4DF01B8515070035A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73DB4DB21B8514EF0035A444 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73DB4DDA1B8515070035A444;
+			remoteInfo = SEPTAKitExample;
+		};
+		73DB4E141B851A160035A444 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73DB4DB21B8514EF0035A444 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 73DB4DBA1B8514EF0035A444;
+			remoteInfo = SEPTAKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73DB4E161B851A160035A444 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73DB4E131B851A160035A444 /* SEPTAKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		73DB4DBB1B8514EF0035A444 /* SEPTAKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SEPTAKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +71,22 @@
 		73DB4DC61B8514EF0035A444 /* SEPTAKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEPTAKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DB4DCC1B8514EF0035A444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73DB4DCD1B8514EF0035A444 /* SEPTAKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEPTAKitTests.swift; sourceTree = "<group>"; };
+		73DB4DDB1B8515070035A444 /* SEPTAKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEPTAKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DB4DDE1B8515070035A444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73DB4DDF1B8515070035A444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73DB4DE11B8515070035A444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73DB4DE41B8515070035A444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		73DB4DE61B8515070035A444 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		73DB4DE91B8515070035A444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		73DB4DEF1B8515070035A444 /* SEPTAKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SEPTAKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73DB4DF41B8515070035A444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73DB4DF51B8515070035A444 /* SEPTAKitExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEPTAKitExampleTests.swift; sourceTree = "<group>"; };
+		73DB4DFD1B85151B0035A444 /* SEPTAKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEPTAKit.swift; sourceTree = "<group>"; };
+		73DB4DFF1B85153B0035A444 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		73DB4E011B8515930035A444 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		73DB4E031B85162E0035A444 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		73E65C2B1B8644A60033A345 /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		73E65C611B8678D00033A345 /* TrainViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +105,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73DB4DD81B8515070035A444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DB4E111B8519730035A444 /* SEPTAKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DB4DEC1B8515070035A444 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		73DB4DB11B8514EF0035A444 = {
 			isa = PBXGroup;
 			children = (
+				73DB4E031B85162E0035A444 /* LICENSE */,
+				73DB4E011B8515930035A444 /* README.md */,
+				73DB4DFF1B85153B0035A444 /* .gitignore */,
 				73DB4DBD1B8514EF0035A444 /* SEPTAKit */,
 				73DB4DCA1B8514EF0035A444 /* SEPTAKitTests */,
+				73DB4DDC1B8515070035A444 /* SEPTAKitExample */,
+				73DB4DF21B8515070035A444 /* SEPTAKitExampleTests */,
 				73DB4DBC1B8514EF0035A444 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +142,8 @@
 			children = (
 				73DB4DBB1B8514EF0035A444 /* SEPTAKit.framework */,
 				73DB4DC61B8514EF0035A444 /* SEPTAKitTests.xctest */,
+				73DB4DDB1B8515070035A444 /* SEPTAKitExample.app */,
+				73DB4DEF1B8515070035A444 /* SEPTAKitExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +153,9 @@
 			children = (
 				73DB4DC01B8514EF0035A444 /* SEPTAKit.h */,
 				73DB4DBE1B8514EF0035A444 /* Supporting Files */,
+				73DB4DFD1B85151B0035A444 /* SEPTAKit.swift */,
+				73E65C611B8678D00033A345 /* TrainViewDelegate.swift */,
+				73E65C2B1B8644A60033A345 /* Train.swift */,
 			);
 			path = SEPTAKit;
 			sourceTree = "<group>";
@@ -98,6 +181,44 @@
 			isa = PBXGroup;
 			children = (
 				73DB4DCC1B8514EF0035A444 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73DB4DDC1B8515070035A444 /* SEPTAKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				73DB4DDF1B8515070035A444 /* AppDelegate.swift */,
+				73DB4DE11B8515070035A444 /* ViewController.swift */,
+				73DB4DE31B8515070035A444 /* Main.storyboard */,
+				73DB4DE61B8515070035A444 /* Images.xcassets */,
+				73DB4DE81B8515070035A444 /* LaunchScreen.xib */,
+				73DB4DDD1B8515070035A444 /* Supporting Files */,
+			);
+			path = SEPTAKitExample;
+			sourceTree = "<group>";
+		};
+		73DB4DDD1B8515070035A444 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73DB4DDE1B8515070035A444 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73DB4DF21B8515070035A444 /* SEPTAKitExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				73DB4DF51B8515070035A444 /* SEPTAKitExampleTests.swift */,
+				73DB4DF31B8515070035A444 /* Supporting Files */,
+			);
+			path = SEPTAKitExampleTests;
+			sourceTree = "<group>";
+		};
+		73DB4DF31B8515070035A444 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				73DB4DF41B8515070035A444 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,6 +273,43 @@
 			productReference = 73DB4DC61B8514EF0035A444 /* SEPTAKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		73DB4DDA1B8515070035A444 /* SEPTAKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DB4DF71B8515070035A444 /* Build configuration list for PBXNativeTarget "SEPTAKitExample" */;
+			buildPhases = (
+				73DB4DD71B8515070035A444 /* Sources */,
+				73DB4DD81B8515070035A444 /* Frameworks */,
+				73DB4DD91B8515070035A444 /* Resources */,
+				73DB4E161B851A160035A444 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73DB4E151B851A160035A444 /* PBXTargetDependency */,
+			);
+			name = SEPTAKitExample;
+			productName = SEPTAKitExample;
+			productReference = 73DB4DDB1B8515070035A444 /* SEPTAKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		73DB4DEE1B8515070035A444 /* SEPTAKitExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DB4DFA1B8515070035A444 /* Build configuration list for PBXNativeTarget "SEPTAKitExampleTests" */;
+			buildPhases = (
+				73DB4DEB1B8515070035A444 /* Sources */,
+				73DB4DEC1B8515070035A444 /* Frameworks */,
+				73DB4DED1B8515070035A444 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				73DB4DF11B8515070035A444 /* PBXTargetDependency */,
+			);
+			name = SEPTAKitExampleTests;
+			productName = SEPTAKitExampleTests;
+			productReference = 73DB4DEF1B8515070035A444 /* SEPTAKitExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,9 +321,18 @@
 				TargetAttributes = {
 					73DB4DBA1B8514EF0035A444 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3ZAFGK6M4Y;
 					};
 					73DB4DC51B8514EF0035A444 = {
 						CreatedOnToolsVersion = 6.4;
+					};
+					73DB4DDA1B8515070035A444 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 3ZAFGK6M4Y;
+					};
+					73DB4DEE1B8515070035A444 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 73DB4DDA1B8515070035A444;
 					};
 				};
 			};
@@ -175,6 +342,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 73DB4DB11B8514EF0035A444;
 			productRefGroup = 73DB4DBC1B8514EF0035A444 /* Products */;
@@ -183,6 +351,8 @@
 			targets = (
 				73DB4DBA1B8514EF0035A444 /* SEPTAKit */,
 				73DB4DC51B8514EF0035A444 /* SEPTAKitTests */,
+				73DB4DDA1B8515070035A444 /* SEPTAKitExample */,
+				73DB4DEE1B8515070035A444 /* SEPTAKitExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,10 +362,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DB4E041B85162E0035A444 /* LICENSE in Resources */,
+				73DB4E001B85153C0035A444 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		73DB4DC41B8514EF0035A444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DB4DD91B8515070035A444 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DB4DE51B8515070035A444 /* Main.storyboard in Resources */,
+				73DB4DEA1B8515070035A444 /* LaunchScreen.xib in Resources */,
+				73DB4DE71B8515070035A444 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DB4DED1B8515070035A444 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,6 +398,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DB4E021B8515930035A444 /* README.md in Sources */,
+				73DB4DFE1B85151B0035A444 /* SEPTAKit.swift in Sources */,
+				73E65C621B8678D00033A345 /* TrainViewDelegate.swift in Sources */,
+				73E65C2C1B8644A60033A345 /* Train.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +413,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		73DB4DD71B8515070035A444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DB4DE21B8515070035A444 /* ViewController.swift in Sources */,
+				73DB4DE01B8515070035A444 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73DB4DEB1B8515070035A444 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DB4DF61B8515070035A444 /* SEPTAKitExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -228,7 +438,36 @@
 			target = 73DB4DBA1B8514EF0035A444 /* SEPTAKit */;
 			targetProxy = 73DB4DC81B8514EF0035A444 /* PBXContainerItemProxy */;
 		};
+		73DB4DF11B8515070035A444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73DB4DDA1B8515070035A444 /* SEPTAKitExample */;
+			targetProxy = 73DB4DF01B8515070035A444 /* PBXContainerItemProxy */;
+		};
+		73DB4E151B851A160035A444 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 73DB4DBA1B8514EF0035A444 /* SEPTAKit */;
+			targetProxy = 73DB4E141B851A160035A444 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		73DB4DE31B8515070035A444 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73DB4DE41B8515070035A444 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		73DB4DE81B8515070035A444 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				73DB4DE91B8515070035A444 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		73DB4DCF1B8514EF0035A444 /* Debug */ = {
@@ -323,6 +562,9 @@
 		73DB4DD21B8514EF0035A444 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +574,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		73DB4DD31B8514EF0035A444 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -380,6 +626,70 @@
 			};
 			name = Release;
 		};
+		73DB4DF81B8515070035A444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SEPTAKitExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		73DB4DF91B8515070035A444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SEPTAKitExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		73DB4DFB1B8515070035A444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SEPTAKitExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEPTAKitExample.app/SEPTAKitExample";
+			};
+			name = Debug;
+		};
+		73DB4DFC1B8515070035A444 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SEPTAKitExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SEPTAKitExample.app/SEPTAKitExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +709,7 @@
 				73DB4DD31B8514EF0035A444 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		73DB4DD41B8514EF0035A444 /* Build configuration list for PBXNativeTarget "SEPTAKitTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +718,25 @@
 				73DB4DD61B8514EF0035A444 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DB4DF71B8515070035A444 /* Build configuration list for PBXNativeTarget "SEPTAKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DB4DF81B8515070035A444 /* Debug */,
+				73DB4DF91B8515070035A444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73DB4DFA1B8515070035A444 /* Build configuration list for PBXNativeTarget "SEPTAKitExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73DB4DFB1B8515070035A444 /* Debug */,
+				73DB4DFC1B8515070035A444 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

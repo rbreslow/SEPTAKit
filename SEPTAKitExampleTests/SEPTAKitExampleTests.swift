@@ -1,6 +1,6 @@
 //
-//  SEPTAKitTests.swift
-//  SEPTAKitTests
+//  SEPTAKitExampleTests.swift
+//  SEPTAKitExampleTests
 //
 //  Created by Rocky Breslow on 8/19/15.
 //  Copyright (c) 2015 Rocky Breslow. All rights reserved.
@@ -8,9 +8,8 @@
 
 import UIKit
 import XCTest
-import SEPTAKit
 
-class SEPTAKitTests: XCTestCase {
+class SEPTAKitExampleTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -33,5 +32,5 @@ class SEPTAKitTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
+    
 }
