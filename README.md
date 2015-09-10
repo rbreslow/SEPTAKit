@@ -1,6 +1,6 @@
 # SEPTAKit
 
-SEPTAKit is an iOS framework, written in Swift, to communicate with [SEPTA's Hackathon API](www3.septa.org). **This is still under active development and isn't near completion.**
+SEPTAKit is an iOS framework, written in Swift, to communicate with [SEPTA's Hackathon API](http://www3.septa.org). **This is still under active development and isn't near completion.**
 
 ## Why?
 
