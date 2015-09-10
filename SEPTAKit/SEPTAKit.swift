@@ -60,4 +60,61 @@ public class SEPTAKit {
         task.resume()
     }
     
+    /**
+    Queries for a schedule to get from one station to another.
+    
+    :returns: An array of Trip objects.
+    */
+    public static func nextToArrive(from: String, to: String, max: Int, delegate: NextToArriveDelegate?) {
+        class MyRequestController {
+            func sendRequest() {
+                /* Configure session, choose between:
+                * defaultSessionConfiguration
+                * ephemeralSessionConfiguration
+                * backgroundSessionConfigurationWithIdentifier:
+                And set session-wide properties, such as: HTTPAdditionalHeaders,
+                HTTPCookieAcceptPolicy, requestCachePolicy or timeoutIntervalForRequest.
+                */
+                let sessionConfig = NSURLSessionConfiguration.defaultSessionConfiguration()
+                
+                /* Create session, and optionally set a NSURLSessionDelegate. */
+                let session = NSURLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+                
+                /* Create the Request:
+                NextToArrive (GET http://www3.septa.org/hackathon/NextToArrive/Chestnut%20Hill%20West/Highland/10)
+                */
+                
+                var URL = NSURL(string: "http://www3.septa.org/hackathon/NextToArrive/\(from)/\(to)/\(max)")
+                let request = NSMutableURLRequest(URL: URL!)
+                request.HTTPMethod = "GET"
+                
+                /* Start a new Task */
+                let task = session.dataTaskWithRequest(request, completionHandler: { (data : NSData!, response : NSURLResponse!, error : NSError!) -> Void in
+                    if (error == nil) {
+                        // Success
+                        let statusCode = (response as! NSHTTPURLResponse).statusCode
+                        println("URL Session Task Succeeded: HTTP \(statusCode)")
+                        
+                        var trips = [Trip]()
+                        
+                        for dict in NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSArray {
+                            if let dict = dict as? NSDictionary {
+                                trips.append(Trip.createFrom(dict))
+                            }
+                        }
+                        
+                        delegate?.didLoadData(trips)
+                    }
+                    else {
+                        // Failure
+                        println("URL Session Task Failed: %@", error.localizedDescription);
+                    }
+                })
+                task.resume()
+            }
+            
+        }
+
+    }
+    
 }

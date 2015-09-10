@@ -1,49 +1,43 @@
 //
 //  ViewController.swift
-//  SEPTAKitExample
+//  SEPTAKit
 //
-//  Created by Rocky Breslow on 8/19/15.
+//  Created by Rocky Breslow on 8/20/15.
 //  Copyright (c) 2015 Rocky Breslow. All rights reserved.
 //
 
 import UIKit
-import MapKit
-import SEPTAKit
 
-class ViewController: UIViewController, TrainViewDelegate {
-
-    @IBOutlet weak var MapView: MKMapView!
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var toolBar: UIToolbar!
+    @IBOutlet weak var toolBarView: UIView!
+    
+    @IBOutlet weak var fromField: UITextField!
+    @IBOutlet weak var toField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
         
-        SEPTAKit.trainView(self)
         
-        // Do any additional setup after loading the view, typically from a nib.
+        self.toolBarView.frame = CGRectMake(self.toolBarView.frame.origin.x, self.toolBarView.frame.origin.y, UIScreen.mainScreen().bounds.size.width - 12, self.toolBarView.frame.size.height)
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func reloadMap(sender: AnyObject) {
-        SEPTAKit.trainView(self)
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
-    func didLoadData(trains: [Train]) {
-        // http://stackoverflow.com/questions/10865088/how-do-i-remove-all-annotations-from-mkmapview-except-the-user-location-annotati
-        // Clears all annotations from MapView
-        let annotationsToRemove = MapView.annotations.filter { $0 !== self.MapView.userLocation }
-        MapView.removeAnnotations(annotationsToRemove)
-        
-        for train in trains {
-            var point = MKPointAnnotation()
-            point.coordinate = CLLocationCoordinate2D(latitude: train.lat, longitude: train.lon)
-            point.title = "\(train.dest) #\(train.trainNo)"
-            point.subtitle = "Next Stop: \(train.nextStop)"
-            MapView.addAnnotation(point)
-        }
-    }
+    */
+
 }
-
-

@@ -11,7 +11,7 @@
 		73DB4DC71B8514EF0035A444 /* SEPTAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DB4DBB1B8514EF0035A444 /* SEPTAKit.framework */; };
 		73DB4DCE1B8514EF0035A444 /* SEPTAKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DCD1B8514EF0035A444 /* SEPTAKitTests.swift */; };
 		73DB4DE01B8515070035A444 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DDF1B8515070035A444 /* AppDelegate.swift */; };
-		73DB4DE21B8515070035A444 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DE11B8515070035A444 /* ViewController.swift */; };
+		73DB4DE21B8515070035A444 /* TrainViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DB4DE11B8515070035A444 /* TrainViewViewController.swift */; };
 		73DB4DE51B8515070035A444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DB4DE31B8515070035A444 /* Main.storyboard */; };
 		73DB4DE71B8515070035A444 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DB4DE61B8515070035A444 /* Images.xcassets */; };
 		73DB4DEA1B8515070035A444 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73DB4DE81B8515070035A444 /* LaunchScreen.xib */; };
@@ -24,6 +24,9 @@
 		73DB4E131B851A160035A444 /* SEPTAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73DB4DBB1B8514EF0035A444 /* SEPTAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		73E65C2C1B8644A60033A345 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E65C2B1B8644A60033A345 /* Train.swift */; };
 		73E65C621B8678D00033A345 /* TrainViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E65C611B8678D00033A345 /* TrainViewDelegate.swift */; };
+		73E65C641B868D9E0033A345 /* NextToArriveDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E65C631B868D9E0033A345 /* NextToArriveDelegate.swift */; };
+		73E65C661B868E280033A345 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E65C651B868E270033A345 /* Trip.swift */; };
+		73E65C6C1B8696560033A345 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E65C6B1B8696560033A345 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +77,7 @@
 		73DB4DDB1B8515070035A444 /* SEPTAKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEPTAKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DB4DDE1B8515070035A444 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73DB4DDF1B8515070035A444 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73DB4DE11B8515070035A444 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73DB4DE11B8515070035A444 /* TrainViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewViewController.swift; sourceTree = "<group>"; };
 		73DB4DE41B8515070035A444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73DB4DE61B8515070035A444 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		73DB4DE91B8515070035A444 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -87,6 +90,9 @@
 		73DB4E031B85162E0035A444 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		73E65C2B1B8644A60033A345 /* Train.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
 		73E65C611B8678D00033A345 /* TrainViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainViewDelegate.swift; sourceTree = "<group>"; };
+		73E65C631B868D9E0033A345 /* NextToArriveDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextToArriveDelegate.swift; sourceTree = "<group>"; };
+		73E65C651B868E270033A345 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		73E65C6B1B8696560033A345 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,8 @@
 				73DB4DC01B8514EF0035A444 /* SEPTAKit.h */,
 				73DB4DBE1B8514EF0035A444 /* Supporting Files */,
 				73DB4DFD1B85151B0035A444 /* SEPTAKit.swift */,
+				73E65C651B868E270033A345 /* Trip.swift */,
+				73E65C631B868D9E0033A345 /* NextToArriveDelegate.swift */,
 				73E65C611B8678D00033A345 /* TrainViewDelegate.swift */,
 				73E65C2B1B8644A60033A345 /* Train.swift */,
 			);
@@ -189,11 +197,12 @@
 			isa = PBXGroup;
 			children = (
 				73DB4DDF1B8515070035A444 /* AppDelegate.swift */,
-				73DB4DE11B8515070035A444 /* ViewController.swift */,
+				73DB4DE11B8515070035A444 /* TrainViewViewController.swift */,
 				73DB4DE31B8515070035A444 /* Main.storyboard */,
 				73DB4DE61B8515070035A444 /* Images.xcassets */,
 				73DB4DE81B8515070035A444 /* LaunchScreen.xib */,
 				73DB4DDD1B8515070035A444 /* Supporting Files */,
+				73E65C6B1B8696560033A345 /* ViewController.swift */,
 			);
 			path = SEPTAKitExample;
 			sourceTree = "<group>";
@@ -398,7 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E65C661B868E280033A345 /* Trip.swift in Sources */,
 				73DB4E021B8515930035A444 /* README.md in Sources */,
+				73E65C641B868D9E0033A345 /* NextToArriveDelegate.swift in Sources */,
 				73DB4DFE1B85151B0035A444 /* SEPTAKit.swift in Sources */,
 				73E65C621B8678D00033A345 /* TrainViewDelegate.swift in Sources */,
 				73E65C2C1B8644A60033A345 /* Train.swift in Sources */,
@@ -417,7 +428,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73DB4DE21B8515070035A444 /* ViewController.swift in Sources */,
+				73E65C6C1B8696560033A345 /* ViewController.swift in Sources */,
+				73DB4DE21B8515070035A444 /* TrainViewViewController.swift in Sources */,
 				73DB4DE01B8515070035A444 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
