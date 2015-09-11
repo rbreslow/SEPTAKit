@@ -10,18 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var toolBar: UIToolbar!
-    @IBOutlet weak var toolBarView: UIView!
-    
-    @IBOutlet weak var fromField: UITextField!
-    @IBOutlet weak var toField: UITextField!
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         
-        self.toolBarView.frame = CGRectMake(self.toolBarView.frame.origin.x, self.toolBarView.frame.origin.y, UIScreen.mainScreen().bounds.size.width - 12, self.toolBarView.frame.size.height)
+//        self.toolBarView.frame = CGRectMake(self.toolBarView.frame.origin.x, self.toolBarView.frame.origin.y, UIScreen.mainScreen().bounds.size.width - 12, self.toolBarView.frame.size.height)
     }
 
     override func didReceiveMemoryWarning() {
